@@ -1,0 +1,6 @@
+username,password,expect_code,expect_keyword,case_desc
+emilys,emilyspass,200,accessToken,正确账号密码登录（预期成功）
+emilys,,400,Username and password required,仅输账号不输密码（预期密码缺失）
+,123456,400,Username and password required,仅输密码不输账号（预期用户名缺失）
+,,400,Username and password required,空账号空密码（预期用户名缺失）
+wronguser,wrongpass,400,Invalid credentials,错误账号密码（预期认证失败）

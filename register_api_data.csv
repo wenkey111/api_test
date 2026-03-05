@@ -1,0 +1,8 @@
+firstName,lastName,age,expect_code,expect_keyword,case_desc
+Muhammad,Ovi,25,201,id,完整参数注册（预期成功）
+Muhammad,,25,201,id,仅传firstName和age（预期成功，lastName为空）
+,Ovi,25,201,id,仅传lastName和age（预期成功，firstName为空）
+Muhammad,Ovi,,201,id,不传age（预期成功，age为空）
+,,,201,firstName,空参数注册（预期失败）
+Test,User,0,201,id,age为0注册（预期成功，模拟边界值）
+Test,User,120,201,id,age为120注册（预期成功，模拟边界值）

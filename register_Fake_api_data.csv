@@ -1,0 +1,6 @@
+username,email,password,expect_code,expect_keyword,case_desc
+testuser001,test001@example.com,12345678,201,id,完整参数注册（预期成功）
+testuser002,test002@example.com,,400,Password,仅传用户名和邮箱（预期密码缺失）
+testuser003,,12345678,400,Email,仅传用户名和密码（预期邮箱缺失）
+,,12345678,400,Username,仅传密码（预期用户名缺失）
+testuser004,wrong-email-format,12345678,400,Email,邮箱格式错误（预期邮箱错误）
